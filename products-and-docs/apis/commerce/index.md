@@ -2922,3 +2922,45 @@ commerce/{version}/shopping/carts/{cartId}/products.{format}
 Same as the [Get Cart API](#get-cart).
 
 
+
+## Select Payments
+{: .article .console-link #select-payments}
+
+**Method:** PATCH
+Authentication required.
+
+This operation allows users to add one or more payments to a cart.
+
+This operation returns a cart with the selected payment(s).
+
+commerce/{version}/shopping/carts/{cartId}/payments.{format}
+{: .code .red}
+
+### URL parameters:
+
+| Parameter  | Description          | Type              | Default Value      | Required |
+|:-----------|:---------------------|:----------------- |:------------------ |:-------- |
+| `version`  | The API Version.     | string            |       "v2"         | Yes      |
+| `cartId`   | Cart ID. Required.   | string            | "c5d3fb70-f7cb-489d-823d-8103222f0c17.jash1" | Yes      |
+| `format`   | API Response Format. | string            |       "json"       | Yes      |
+
+
+### Request body structure:
+
+{: .nested-list }
+* `pollingCallbackUrl` (string) - **Required** - client webhook URI where response will be posted if the operation polls.
+* `payments` (array) - **Required (at least one)** - container of add payment requests.
+    + `{array item object}` - an add payment request.
+        - `type` (string) - **Required** - the payment type.  valid values - _cash_, _wallet_.
+        - `amount` (object) - **Required** - the payment amount object.
+            * `amount` (string) - **Required** - the payment amount.
+            * `currency` (string) - **Required** - the payment currency.
+        - `token` (string) - _**Required when wallet payment**_ - the wallet token.
+        - `cvv` (string) - _**Required when wallet payment**_ - the cvv associated with wallet.
+        - `selectedItems` (array) - _Optional_ - list of the selected items to which this payment applies.
+            * `{array item object}` - a selected payment item.
+                + `reservations` (array) - **Required** - list of the reservation ids.
+
+### Response structure:
+
+Same as the [Get Cart API](#get-cart).
