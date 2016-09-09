@@ -293,7 +293,7 @@ The API also supports [Cross-Origin Resource Sharing (CORS)](http://en.wikipedia
       <td style="text-align: center;border-left: 0px;" class="checked-td"></td>
     </tr>
     <tr>
-      <td style="text-align: center; background: rgb(255, 255, 255);" rowspan="5">
+      <td style="text-align: center; background: rgb(255, 255, 255);" rowspan="6">
         <a href="/products-and-docs/apis/commerce/">
           <img src="/assets/img/getting-started/ic-commerce-api.svg" alt="Commerce API">
         </a>
@@ -335,8 +335,22 @@ The API also supports [Cross-Origin Resource Sharing (CORS)](http://en.wikipedia
       <td style="text-align: center;border-right: 0px; border-left: 0px; "  class="checked-td"></td>
       <td style="text-align: center;border-left: 0px;" class="checked-td"></td>
     </tr>
+    <tr>
+          <td style="text-align: left;"><a href="/products-and-docs/apis/commerce/#select-payments">Select Payments</a></td>
+          <td style="text-align: center;border-right: 0px;" class="checked-td"></td>
+          <td style="text-align: center;border-right: 0px; border-left: 0px; " class="checked-td"></td>
+          <td style="text-align: center;border-right: 0px; border-left: 0px; "  class="checked-td"></td>
+          <td style="text-align: center;border-left: 0px;" class="checked-td"></td>
+    </tr>
     
     
+    <tr>
+          <td style="text-align: left"><a href="/products-and-docs/apis/commerce/#select-payments">Select Payments</a></td>
+          <td style="text-align: center;border-right: 0px;" class="checked-td"></td>
+          <td style="text-align: center;border-right: 0px; border-left: 0px;" class="checked-td"></td>
+          <td style="text-align: center;border-right: 0px; border-left: 0px;" class="checked-td"></td>
+          <td style="text-align: center;border-left: 0px;" class="checked-td"></td>
+    </tr>
     <tr>
       <td style="text-align: center" rowspan="14">
         <a href="/products-and-docs/apis/partner/">
