@@ -2964,3 +2964,163 @@ commerce/{version}/shopping/carts/{cartId}/payments.{format}
 ### Response structure:
 
 Same as the [Get Cart API](#get-cart).
+
+## Select Deliveries
+{: .article .console-link #select-deliveries}
+
+**Method:** PATCH
+Authentication required.
+
+This operation allows users to add deliveries to a cart.
+
+This operation supports the following add deliveries to cart requests:
+{: .nested-list}
+* all items in a cart.
+* all items in a reservation.
+* all items in a specified set of inventory item groups.
+* a set of specified inventory items.
+
+This operation returns the updated cart including delivery information.
+
+commerce/{version}/shopping/carts/{cartId}/deliveries.{format}
+{: .code .red}
+
+### URL parameters:
+
+| Parameter  | Description          | Type              | Default Value      | Required |
+|:-----------|:---------------------|:----------------- |:------------------ |:-------- |
+| `version`  | The API Version.     | string            |       "v2"         | Yes      |
+| `cartId`   | Cart ID. Required.   | string            | "c5d3fb70-f7cb-489d-823d-8103222f0c17.jash1" | Yes      |
+| `format`   | API Response Format. | string            |       "json"       | Yes      |
+
+
+### Request body structure:
+
+{: .nested-list }
+* `deliveries` (array) - **Required (at least one)** - container of add delivery requests.
+    + `{array item object}` - an add delivery request.
+        - `deliveryId` (string) - **Required** - the deliveryId.
+         - `selectedItems` (array) - **Required** - list of selected delivery items to be added to the cart.
+            * `{array reservation object}` - array of String.
+                + `reservation` (array) - **Required** - the reservation id.
+
+### Response structure:
+
+{: .nested-list }
+- `cart` (object) - the cart
+    * `id` (string) - the cart id.
+    * `type` (string) - '_carts_'.
+    * `attributes` (object) - the attributes of the cart.
+        + `reservations` (array) - container of reservations.
+            + `{array item object}` - reservation.
+        + `fees` (array) - container of order level fees.
+            + `{array item object}` - order level fee.
+        + `taxes` (array) - container of order level taxes.
+            + `{array item object}` - order level tax.
+        + `totals` (object) - the total amounts for the cart.
+            + `currency` (string) - the code of the currency for the totals.
+            + `price` (string) - the total price of items in the cart.
+            + `fees` (string) - the total fees for the cart.
+            + `taxes` (string) - the total taxes for the cart.
+            + `total` (string) - the grand total of the cart.
+        + `deliveries` (object) - the list of deliveries added to the cart.
+            + `data` (array)
+                - `{array item object}` - an delivery added to the cart.
+                    + `id` (string) - the delivery Id.
+                    + `deliveryType` (string) - the the delivery type.
+                    + `totals` (string) - the total delivery costs.
+                        + `currency` (string) - the code of the currency for the totals.
+                        + `price` (string) - the total price of the delivery.
+                        + `fees` (string) - the total fees of the delivery.
+                        + `taxes` (string) - the total taxes of the delivery.
+                        + `total` (string) - the grand total of the delivery.
+                    + `reservation` (array) - the reservation ids.
+    * `relationships` (object) - the relationships of the cart.
+        + `events` (object) - container for event relationships.
+            + `data` (array) - container for event relationships.
+                + `{array item object}` - event reference.
+                    + `id` (string) - the event id.
+                    + `type` (string) - '_events_'.
+        + `products` (object) - container for product relationships.
+            + `data` (array) - container for product relationships.
+                + `{array item object}` - the product reference.
+                    + `id` (string) - the product id.
+                    + `type` (string) - '_products_'.
+        + `offers` (object) - container for offer relationships.
+            + `data` (array) - container for offer relationships.
+                + `{array item object}` - the offer reference.
+                    + `id` (string) - the offer id.
+                    + `type` (string) - '_offers_'.
+- `_embedded` (object) - container for included (embedded) data.
+    * `events` (object) - container for included events data.
+        + `data` (array)
+            - `{array item object}` - an event.
+                * `id` (string) - the event id.
+                * `type` (string) - '_events'.
+                * `attributes` (object) - event attributes.
+                    - `name` (string) - the event name.
+                * `relationships` (object) - event relationships.
+                    - `products` (object) - container for event-product relationships.
+                        * `data` (array)
+                            + `{array item object}` - product reference.
+                                - `id` (string) - the product id.
+                                - `type` (string) - '_products_'.
+                    - `offers` (object) - container for event-offer relationships.
+                        * `data` (array)
+                            + `{array item object}` - offer refernece.
+                                - `id` (string) - the offer id.
+                                - `type` (string) - '_offers_'.
+    * `products` (object) - container for included products data.
+        + `data` (array)
+            - `{array item object}` - a product.
+                * `id` (string) - the product id.
+                * `type` (string) - '_products_'.
+                * `attributes` (object) - the product attributes.
+                * `relationships` (object) - product relationships.
+                    - `offers` (object) - container for product-offer relationships.
+                        * `data` (array)
+                            + `{array item object}` - offer reference.
+                                - `id` (string) - the offer id.
+                                - `type` (string) - '_offers_'.
+                    - `events` (object) - container for product-event relationships.
+                        * `data` (array)
+                            + `{array item object}` - the event reference.
+                                - `id` (string) - the event id.
+                                - `type` (string) - '_events_'.
+    * `offers` (object) - container for included offers data.
+        + `data` (array)
+            - `{array item object}` - an offer.
+                * `id` (string) - the offer id.
+                * `type` (string) - '_offers_'.
+                * `attributes` (object) - the offer attributes.
+                    + `name` (string) - the offer name.
+                    + `description` (string) - the offer description.
+                * `relationships` (object) - the offer relationships.
+                    + `products` (object) - container for offer-product relationships.
+                        * `data` (array)
+                            + `{array item object}` - product reference.
+                                - `id` (string) - the product id.
+                                - `type` (string) - '_products_'.
+                    + `events` (object) - container for offer-event relationships.
+                        * `data` (array)
+                            + `{array item object}` - event reference.
+                                - `id` (string) - the event id.
+                                - `type` (string) - '_events_'.
+    * `deliveries` (object) - container for included deliveries data.
+        + `data` (array)
+            - `{array item object}` - an offer.
+                * `id` (string) - the delivery id.
+                * `type` (string) - 'delivery'.
+                * `attributes` (object) - the delivery attributes.
+                    + `displayRank` (string) - the display rank.
+                    + `icon` (string) - the icon URL.
+                    + `description` (string) - the delivery description.
+                        - `short` (string) - the short description.
+                        - `long` (string) - the long description.
+                * `relationships` (object) - the offer relationships.
+                    + `reservations` (object) - container for delivery-reservation relationships.
+                        * `data` (array)
+                            + `{array item object}` - reservation reference.
+                                - `id` (string) - the reservation id.
+                                - `type` (string) - 'reservation'.
+- `status` (string) - the Http status code for the response.
