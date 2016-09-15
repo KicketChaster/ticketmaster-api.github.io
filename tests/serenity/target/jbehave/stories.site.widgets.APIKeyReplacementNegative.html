@@ -1,0 +1,69 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/site/widgets/APIKeyReplacementNegative.story</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> test enfineer</div>
+<div class="element asA"><span class="keyword asA">I want to</span> test Ticket Master Developer's site</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I test API Key is NOT replaced on the page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Commerce API page) Custom API key is not replaced when user is logged in</h2>
+<div class="step successful">Given open Commerce API page</div>
+<div class="step successful">When User is logged to site (Commerce API)</div>
+<div class="step successful">Then check that API key is provided for all placeholders on Commerce API page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Top Picks API page) Custom API key is not replaced when user is logged in</h2>
+<div class="step successful">Given open Top Picks API page</div>
+<div class="step successful">When User is logged to site (Top Picks API)</div>
+<div class="step successful">Then check that API key is provided for all placeholders on Top Picks API page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Season Ticketing API page) Custom API key is not replaced when user is logged in</h2>
+<div class="step successful">Given open Season Ticketing API page</div>
+<div class="step successful">When User is logged to site (Season Ticketing API)</div>
+<div class="step successful">Then check that API key is provided for all placeholders on Season Ticketing API page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - International Discovery API page) Custom API key is not replaced when user is logged in</h2>
+<div class="step successful">Given open International Discovery API page</div>
+<div class="step successful">When User is logged to site (International Discovery API)</div>
+<div class="step successful">Then check that API key is provided for all placeholders on International Discovery API page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Publish API page) Custom API key is not replaced when user is logged in</h2>
+<div class="step successful">Given open Publish API page</div>
+<div class="step successful">When User is logged to site (Publish API)</div>
+<div class="step successful">Then check that API key is provided for all placeholders on Publish API page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Deals API page) Custom API key is not replaced when user is logged in</h2>
+<div class="step successful">Given open Deals API page</div>
+<div class="step successful">When User is logged to site (Deals API)</div>
+<div class="step successful">Then check that API key is provided for all placeholders on Deals API page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Partner API page) Custom API key is not replaced when user is logged in</h2>
+<div class="step successful">Given open Partner API page</div>
+<div class="step successful">When User is logged to site (Partner API)</div>
+<div class="step failed">Then check that API key is provided for all placeholders on Partner API page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 2 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-0e290319-3440-linux-8', ip: '172.17.6.15', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown</span></div>
+<pre class="failure">net.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 2 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-0e290319-3440-linux-8', ip: '172.17.6.15', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+	at net.serenitybdd.core.exceptions.SerenityManagedException.detachedCopyOf(SerenityManagedException.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:317)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_PartnerAPISteps$$EnhancerByCGLIB$$aab59688.checkAPIKeyPlaceholders(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_PartnerAPIDefinition.checkAPIKeyPlaceholders(PD_PartnerAPIDefinition.java:47)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>

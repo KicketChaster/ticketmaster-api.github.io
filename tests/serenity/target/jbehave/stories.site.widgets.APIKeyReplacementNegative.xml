@@ -1,0 +1,60 @@
+<story path="stories/site/widgets/APIKeyReplacementNegative.story" title="">
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="As a">test enfineer</inOrderTo>
+  <asA keyword="I want to">test Ticket Master Developer&apos;s site</asA>
+  <iWantTo keyword="So that">I test API Key is NOT replaced on the page</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="(APi Key - Commerce API page) Custom API key is not replaced when user is logged in">
+<step outcome="successful">Given open Commerce API page</step>
+<step outcome="successful">When User is logged to site (Commerce API)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Commerce API page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Top Picks API page) Custom API key is not replaced when user is logged in">
+<step outcome="successful">Given open Top Picks API page</step>
+<step outcome="successful">When User is logged to site (Top Picks API)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Top Picks API page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Season Ticketing API page) Custom API key is not replaced when user is logged in">
+<step outcome="successful">Given open Season Ticketing API page</step>
+<step outcome="successful">When User is logged to site (Season Ticketing API)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Season Ticketing API page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - International Discovery API page) Custom API key is not replaced when user is logged in">
+<step outcome="successful">Given open International Discovery API page</step>
+<step outcome="successful">When User is logged to site (International Discovery API)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on International Discovery API page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Publish API page) Custom API key is not replaced when user is logged in">
+<step outcome="successful">Given open Publish API page</step>
+<step outcome="successful">When User is logged to site (Publish API)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Publish API page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Deals API page) Custom API key is not replaced when user is logged in">
+<step outcome="successful">Given open Deals API page</step>
+<step outcome="successful">When User is logged to site (Deals API)</step>
+<step outcome="successful">Then check that API key is provided for all placeholders on Deals API page</step>
+</scenario>
+<scenario keyword="Scenario:" title="(APi Key - Partner API page) Custom API key is not replaced when user is logged in">
+<step outcome="successful">Given open Partner API page</step>
+<step outcome="successful">When User is logged to site (Partner API)</step>
+<step outcome="failed" keyword="FAILED">Then check that API key is provided for all placeholders on Partner API page<failure>net.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 2 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;testing-worker-linux-docker-0e290319-3440-linux-8&apos;, ip: &apos;172.17.6.15&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-40-generic&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: unknown</failure></step>
+<failure>net.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 2 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.53.0&apos;, revision: &apos;35ae25b1534ae328c771e0856c93e187490ca824&apos;, time: &apos;2016-03-15 10:43:46&apos;
+System info: host: &apos;testing-worker-linux-docker-0e290319-3440-linux-8&apos;, ip: &apos;172.17.6.15&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;3.13.0-40-generic&apos;, java.version: &apos;1.8.0_31&apos;
+Driver info: driver.version: unknown
+	at net.serenitybdd.core.exceptions.SerenityManagedException.detachedCopyOf(SerenityManagedException.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:317)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_PartnerAPISteps$$EnhancerByCGLIB$$aab59688.checkAPIKeyPlaceholders(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_PartnerAPIDefinition.checkAPIKeyPlaceholders(PD_PartnerAPIDefinition.java:47)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</failure>
+</scenario>

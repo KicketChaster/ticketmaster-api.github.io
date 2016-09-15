@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta content="width=device-width, initial-scale=1.0, target-densitydpi=medium-dpi, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <title>
+            Widget – The Ticketmaster Developer Portal</title>
+    <link href="/favicon.ico" rel="shortcut icon" />
+    <link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+    <link href="/css/main.css" rel="stylesheet" />
+    <link href="/products-and-docs/widgets/event-discovery/" rel="canonical" />
+    <!-- <link rel="alternate" type="application/rss+xml" title="The Ticketmaster Developer Portal" href="/feed.xml"> -->
+    <script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="//s3.amazonaws.com/ki.js/62776/euc.js"></script><script src="/scripts/vendors/jquery-1.11.3.min.js"></script>
+    <script src="/scripts/components/header.js"></script>
+	<script src="https://www.universe.com/embed.js" type="text/javascript"></script><script src="https://embed.universe.com/assets/listing-iframe-bootstrapper-2.15.0-157-ge7afe3d.js" type="text/javascript" charset="UTF-8"></script><link href="https://embed.universe.com/assets/unii-styles-2.15.0-157-ge7afe3d.css" type="text/css" rel="stylesheet" />
+<script src="//ticketmasterapi.disqus.com/embed.js" data-timestamp="1473975570471"></script><script src="https://www.universe.com/embed.js" type="text/javascript" charset="UTF-8" id="id_universe_widget"></script><script src="http://ticketmaster-api-staging.github.io/scripts/vendors/tm.js" type="text/javascript" charset="UTF-8" id="id_tm_widget"></script><style type="text/css" id="ki-jot-jn"></style><style type="text/css" id="ki-jot-jt"></style><script src="https://embed.universe.com/assets/listing-iframe-bootstrapper-2.15.0-157-ge7afe3d.js" type="text/javascript" charset="UTF-8"></script><link href="https://embed.universe.com/assets/unii-styles-2.15.0-157-ge7afe3d.css" type="text/css" rel="stylesheet" /><script src="//a.disquscdn.com/next/embed/alfie.f51946af45e0b561c60f768335c9eb79.js" async="" charset="UTF-8"></script></head>
+
+    <body class="menu-bg">
+        <!-- Qualaroo for ticketmaster.com -->
+        <!-- Paste this code right after the <body> tag on every page of your site. -->
+        <script type="text/javascript">
+          var _kiq = _kiq || [];
+          (function(){
+            setTimeout(function(){
+            var d = document, f = d.getElementsByTagName('script')[0], s = d.createElement('script'); s.type = 'text/javascript';
+            s.async = true; s.src = '//s3.amazonaws.com/ki.js/62776/euc.js'; f.parentNode.insertBefore(s, f);
+            }, 1);
+          })();
+        </script>
+        <div class="top-bar bg-header header-curtain menu-bg">
+<div class="body-wrapper">
+    <div class="row">
+        <div class="col-xs-7 col-lg-2 gray">
+            <a href="/" id="header-logo">
+            
+            <img src="/assets/img/header/tm-developer-logo.svg" alt="Ticketmaster logo" />
+            
+            </a>
+        </div>
+        <nav class="col-xs-12 col-lg-8" id="menu">
+            <!-- links put into single line intentionally to avoid browser rendered spaces -->
+            <a href="/products-and-docs/" data-expands-to="one" class="one nav-item expandable">Products &amp; Docs <span class="header-chevron pull-right"></span></a><a href="/partners/" data-expands-to="two" class="gray expandable">Partners<span class="header-chevron pull-right"></span></a><a href="/support/" data-expands-to="three" class="gray expandable">Support<span class="header-chevron pull-right"></span></a><a href="/blogs/" data-expands-to="four" class="gray">Blogs</a><a href="/events/" data-expands-to="five" class="gray expandable">Events<span class="header-chevron pull-right"></span></a><a href="http://code.ticketmaster.com/" data-expands-to="six" class="gray">Open Source</a>
+        </nav>
+        <div class="col-xs-5 col-lg-2 gray">
+            <a class="white" id="menu-btn"></a>
+            <div class="search-container">
+                <div class="white" id="search">
+                    <div class="search-button"></div>
+                    <form autocomplete="off" id="cse-search-box" action="/search/">
+                        <div>
+                            <input type="hidden" value="000111791941460729347:zmu0d7yvkfq" name="cx" />
+                            <input type="hidden" value="UTF-8" name="ie" />
+                            <input type="text" placeholder="Search for ..." size="14" name="q" class="q" style="background: url(&quot;https://www.google.com/cse/static/en/google_custom_search_watermark.gif&quot;) no-repeat scroll left center rgb(255, 255, 255);" />
+                            <input type="submit" value="" name="sa" class="sa" />
+                        </div>
+                    <input type="hidden" name="siteurl" value="ticketmaster-api-staging.github.io/products-and-docs/widgets/event-discovery/" /><input type="hidden" name="ref" /><input type="hidden" name="ss" /></form>
+                    <script src="//www.google.com/jsapi" type="text/javascript"></script>
+                    <script src="//www.google.com.ua/cse/brand?form=cse-search-box&amp;lang=en" type="text/javascript"></script>
+                    <!--<span tabindex="-1" id="search-alert" style="display: none;">Whoa! Search isn't quite ready yet! We're still working on it.</span>-->
+                </div>
+                <a href="https://developer-acct.ticketmaster.com/user/login" class="apigee-login  white">Login</a>
+            </div>
+        </div>
+        <div id="rainbow">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="three"></span>
+            <span class="four"></span>
+            <span class="five"></span>
+            <span class="six"></span>
+        </div>
+    </div>
+</div>
+</div>
+<div style="position:fixed" tabindex="-1" class="row" id="expand-menu">
+    <div class="row-container">
+        <div style="display: none;" class="expand-section" id="expand-one">
+            <div class="col-xs-2 expand-column">
+                <a href="/products-and-docs/apis/getting-started/">
+                    <h4>APIs</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/products-and-docs/apis/getting-started/">Getting started</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/interactive-console/">Interactive Docs</a>
+                    </li>
+                    <li>
+                        <a href="/api-explorer/">API Explorer</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/changelog/">Changelog</a>
+                    </li>
+
+                    <li>
+                        <h4>OPEN APIs</h4>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/discovery/" class="star">Discovery API</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/commerce/" class="star">Commerce API</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/publish/">Publish API</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/oauth/"> OAuth API</a>
+                    </li>
+
+                    <li>
+                        <h4>PARTNER APIs</h4>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/partner/">Partner API</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/top-picks/">Top Picks API</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/inventory-status/">Inventory Status API</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/deals-api/">Deals API</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/international-discovery/">International Discovery API</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/apis/season-ticketing/">Season Ticketing API</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-2 expand-column">
+                <a href="/products-and-docs/sdks/">
+                    <h4>SDKs</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="https://github.com/ticketmaster-api/sdk-java">Java-SDK</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ticketmaster-api/sdk-javascript">JavaScript-SDK</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ticketmaster-api/sdk-scala">Scala-SDK</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/sdks/#account-manager">Account Manager</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-2 expand-column">
+                <a href="/products-and-docs/widgets/">
+                    <h4>WIDGETS</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/products-and-docs/widgets/">Direct Payments</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/widgets/event-discovery/">Event Discovery Widget</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/widgets/countdown/">Countdown Widget</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/widgets/calendar/">Calendar Widget</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin-right: -50px;" class="col-xs-2 expand-column">
+                <a href="/products-and-docs/tutorials/">
+                    <h4>TUTORIALS</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/products-and-docs/tutorials/events-search/">Events Search</a>
+                    </li>
+                    <li>
+                        <a href="/products-and-docs/tutorials/widgets/">Widgets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div style="display: none;" class="expand-section" id="expand-two">
+            <div style="margin-right: 20px;" class="col-xs-2 expand-column">
+                <a href="/partners/distribution-partners/">
+                    <h4>Distribution Partners</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="https://member.impactradius.com/bla/Ticketmasterdirect/login.user">Affiliate Sign In</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-2 expand-column">
+                <a href="/partners/certified-partners/">
+                    <h4>Certified Partners</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/partners/certified-partners/nexus/">Join the Nexus program</a>
+                    </li>
+                </ul>
+            </div>
+            <!--<div class="col-xs-1 expand-column" style="margin-right: 20px;">
+                <a href="https://member.impactradius.com/bla/Ticketmasterdirect/login.user">
+                    <h4>Affiliates</h4>
+                </a>
+            </div>-->
+            <div style="margin-right: -120px;" class="col-xs-3 expand-column">
+                <a href="/partners/startups-and-developers/">
+                    <h4>Startups &amp; Developers</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/partners/startups-and-developers/#web">Web</a>
+                    </li>
+                    <li>
+                        <a href="/partners/startups-and-developers/#heatmap">Heatmap</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="display: none;" class="expand-section" id="expand-three">
+            <div style="margin-right: 30px;" class="col-xs-1 expand-column">
+                <a href="/support/faq/">
+                    <h4>FAQ</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/support/faq/#general-a">General</a>
+                    </li>
+                    <li>
+                        <a href="/support/faq/#account-a">Data</a>
+                    </li>
+                    <li>
+                        <a href="/support/faq/#affiliates-a">Affiliates</a>
+                    </li>
+                    
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                </ul>
+            </div>
+            
+            <div style="margin-right: 20px;" class="col-xs-2 expand-column">
+                <a href="/support/terms-of-use/">
+                    <h4>General Terms of Use</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/support/terms-of-use/#license">Licensed Uses and Restrictions</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/#ownership">Ownership and Relationship of Parties</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/#support">Support</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/#warranty">Warranty Disclaimer</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/#release">Release and Waiver</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/#indemnity">Hold Harmless and Indemnity</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/#terms">General Terms</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin-right: -40px;" class="col-xs-3 expand-column">
+                <a href="/support/terms-of-use/partner/">
+                    <h4>Partner API Terms of Use</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/support/terms-of-use/partner/#licensed-uses-and-restrictions">Licensed Uses and Restrictions</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/partner/#ownership-and-relationship-of-parties">Ownership and Relationship of Parties</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/partner/#support">Support</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/partner/#warranty-disclaimer">Warranty Disclaimer</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/partner/#release-and-waiver">Release and Waiver</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/partner/#hold-harmless-and-indemnity">Hold Harmless and Indemnity</a>
+                    </li>
+                    <li>
+                        <a href="/support/terms-of-use/partner/#general-terms">General Terms</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin-right: -25px;" class="col-xs-2 expand-column">
+                <a href="/support/branding-guide/">
+                    <h4>Branding Guide</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/support/branding-guide/#brand-logo">Logo</a>
+                    </li>
+                    <li>
+                        <a href="/support/branding-guide/#verified-tickets">Verified Tickets</a>
+                    </li>
+                    <li>
+                        <a href="/support/branding-guide/#legal-stuff">Legal Stuff</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="margin-right: -50px;" class="col-xs-2 expand-column">
+                <a href="/support/contact-us/">
+                    <h4>Contact Us</h4>
+                </a>
+            </div>
+
+        </div>
+        <div style="display: none;" class="expand-section" id="expand-four">
+            <div class="col-xs-2 expand-column">
+                <a href="/blogs/">
+                    <h4>Blogs</h4>
+                </a>
+            </div>
+        </div>
+        <div style="display: none;" class="expand-section" id="expand-five">
+            <div class="col-xs-1 expand-column">
+                <a href="/events/">
+                    <h4>Events</h4>
+                </a>
+                <ul>
+                    <li>
+                        <a href="/events/#upcoming">Upcoming</a>
+                    </li>
+                    <li>
+                        <a href="/events/#past">Past</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div style="display: none;" class="expand-section" id="expand-six">
+            <div class="col-xs-2 expand-column">
+                <a href="http://code.ticketmaster.com/">
+                    <h4>Open Source</h4>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<ul tabindex="-1" class="col-xs-12 col-sm-5 col-lg-3 closed fixed" id="menu-dropdown">
+    
+    <a class="tm-close" id="menu-btn-fixed"></a>
+    
+    <li><a href="https://developer-acct.ticketmaster.com/user/login" class="apgee-login">Login</a></li>
+    <li><a href="/products-and-docs/" class="active">Products &amp; Docs</a></li>
+    <li><a href="/partners/">Partners</a></li>
+    <li><a href="/support/">Support</a></li>
+    <li><a href="/blogs/">Blogs</a></li>
+    <li><a href="/events/">Events</a></li>
+    <li><a href="http://code.ticketmaster.com/">Open Source</a></li>
+</ul>
+
+
+
+<div class="single-column">
+
+    <div class="maincontent">
+        <div style="position: relative;" class="row">
+            <div id="aside-block" class="col-xs-12 col-sm-6 col-lg-3 has-bg is-fixed">
+                <div class="wrapper-aside-menu">
+                    <h3 id="aside-heading" class="menu-header">
+                        Products &amp; Docs
+                        <span id="side-menu-btn" class="expanded"></span>
+                    </h3>
+                    <ul id="scrollable-element" class="aside-menu">
+    <li>
+        <h4><a href="/products-and-docs/apis/getting-started/">APIs</a></h4>
+        
+    </li>
+    <li>
+        <h4><a href="/products-and-docs/sdks/">SDKs</a></h4>
+        
+    </li>
+    <li>
+        <h4><a class="active" href="/products-and-docs/widgets/">Widgets</a></h4>
+        
+            <ul class="categories menu-highlight">
+                <li><a href="https://www.universe.com/directpayments">Direct Payments</a></li>
+                <li><a href="/products-and-docs/widgets/event-discovery/">Event Discovery Widget</a></li>
+                <li><a href="/products-and-docs/widgets/countdown/">Countdown Widget</a></li>
+                <li><a href="/products-and-docs/widgets/calendar/">Calendar Widget</a></li>
+            </ul>
+        
+    </li>
+    <li>
+        <h4><a href="/products-and-docs/tutorials/">Tutorials</a></h4>
+        
+    </li>
+</ul>
+
+<script>
+    $(document).ready(function () {
+
+        var uniqueUpcoming = [].map.call($(".tag-btn"), function(item){
+            return '&lt;li&gt;&lt;a href="#' + item.textContent + '" class="tag-menu-btn"&gt;' + item.textContent + '&lt;/a&gt;&lt;/li&gt;';
+        }).filter( function(value, index, self) {
+            return self.indexOf(value) === index;
+        }).join("");
+
+        if(uniqueUpcoming !== ""){
+            $(".categories&gt;li&gt;a.active + .sd-tags-list").append(uniqueUpcoming);
+        }
+
+        var PartnerTagClickHandler = function() {
+            var currentItem = this.textContent;
+            var isActive = $(this).hasClass('active');
+            if(isActive){
+                $(".tag-btn, .tag-menu-btn").removeClass("active");
+                $(".tutorials-article").show();
+                if(this.tagName.toUpperCase() == "BUTTON"){
+                    this.blur();
+                }
+
+            }else{
+                $(".tag-btn").add(".tag-menu-btn").removeClass("active").map(function(){
+                    if (this.textContent == currentItem) {
+                        return this;
+                    }
+                }).addClass("active");
+
+                $(".tutorials-article").show().filter(function() {
+                    return $(this).find(".tag-btn.active").size() === 0;
+                }).hide();
+            }
+
+
+        };
+
+        $(".tutorials-article").on("click", ".tag-btn", PartnerTagClickHandler);
+        $(".categories").on("click", ".tag-menu-btn", PartnerTagClickHandler);
+    });
+
+
+
+</script>
+
+                </div>
+            </div>
+
+            <div id="main-block" class="col-xs-12 col-sm-12 col-lg-9 page-column ">
+                <div style="display: block;" class="content ">
+                    <link href="/products-and-docs/widgets/event-discovery/1.0.0/theme/listview.css" rel="stylesheet" id="widget-theme-listview" />
+<link href="/products-and-docs/widgets/event-discovery/1.0.0/theme/simple.css" rel="stylesheet" id="widget-theme-simple" />
+<link href="/products-and-docs/widgets/event-discovery/1.0.0/theme/oldschool.css" rel="stylesheet" id="widget-theme-oldschool" />
+<link href="/products-and-docs/widgets/event-discovery/1.0.0/theme/newschool.css" rel="stylesheet" id="widget-theme-newschool" />
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/css/bootstrap-slider.min.css" rel="stylesheet" />
+
+<div class="widget-content-wrapper">
+  <div class="row row-native">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+      <h1>EVENT DISCOVERY WIDGET</h1>
+      <p class="lead">The TM Widgets allow partners to setup particular widgets and provide enhanced discovery experience for consumers within copy/paste distance.</p>
+      <h2>Widget: Keyword search</h2>
+      <p>You can use the widget configurator below to customize the layout of the widget, and grab a small code snippet to insert into your website.</p>
+    </div>
+  </div>
+
+  <div class="row row-native">
+    <div class="col-lg-4 config-block">
+      
+<form autocomplete="off" method="post" class="main-widget-config-form common_tabs" accept-charset="UTF-8">
+
+  <!--Use for mobile devices 'Go' button-->
+  <button class="hidden" type="submit"></button>
+
+  <ul data-tabs="tabs" class="nav nav-tabs">
+    <li class="active">
+      <a data-toggle="tab" href="#widget-config-setup">Technical</a>
+    </li>
+    <li>
+      <a data-toggle="tab" href="#widget-config-styling" id="js_styling_nav_tab">Visual</a>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="widget-config-setup" class="tab-pane fade in active">
+      <div class="row row-native">
+        <div class="col-lg-12 col-md-6 col-sm-6">
+          <div class="widget_api_key">
+            <label for="w-tm-api-key">
+              API Key <span class="config_field__description">(Required)</span>
+            </label>
+            <a class="pull-right" href="https://developer-acct.ticketmaster.com/user/login">Get your own</a>
+            <div class="widget_api_key__field">
+              <input type="text" value="5QGCEXAsJowiCI4n1uAwMlCGAcSNAEmG" name="w-tm-api-key" id="w-tm-api-key" />
+              <a class="widget_api_key__question" href="/support/faq/"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-6 col-sm-6">
+          <label for="w-keyword">Keyword</label>
+          <input type="text" value="" name="w-keyword" id="w-keyword" />
+        </div>
+      </div>
+
+      <div class="row row-native">
+        <div class="col-lg-12 base-margin-bottom">
+          <label>Period</label>
+          <div class="row radio-buttons">
+            <div class="col-lg-3 col-sm-2 col-xs-6 widget__various-min-width">
+              <input type="radio" name="w-period" value="day" id="w-period-day" checked="checked" />
+              <label for="w-period-day">Today</label>
+            </div>
+            <div class="col-lg-3 col-sm-2 col-xs-6 widget__various-min-width">
+              <input type="radio" name="w-period" value="week" id="w-period-week" checked="checked" />
+              <label for="w-period-week">Week</label>
+            </div>
+            <div class="col-lg-3 col-sm-2 col-xs-6 widget__various-min-width">
+              <input type="radio" name="w-period" value="month" id="w-period-month" />
+              <label for="w-period-month">Month</label>
+            </div>
+            <div class="col-lg-3 col-sm-2 col-xs-6 widget__various-min-width">
+              <input type="radio" name="w-period" value="year" id="w-period-year" />
+              <label for="w-period-year">Year</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-native">
+        <div class="col-lg-6 col-md-6 col-sm-3">
+          <label for="w-postalcode">ZIP Code</label>
+          <input type="text" value="90015" name="w-postalcode" id="w-postalcode" />
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-3">
+          <label for="w-radius">
+            Radius <span class="config_field__description">(miles)</span>
+          </label>
+          <div class="js_numeric-input-group"><input type="number" min="1" value="25" name="w-radius" id="w-radius" class="js_widget__number js_numeric_input text-center" /><span class="arrow arrow__inc"></span><span class="arrow arrow__dec"></span></div>
+        </div>
+      </div>
+      <div class="row row-native">
+        <div class="col-lg-12 col-md-12 col-sm-6">
+          <label for="w-country">Country</label>
+        </div>
+        <div class="col-xs-12 country-select">
+          <div class="js_custom_select custom_select">
+            <select disabled="disabled" name="w-country" class="custom_select__field" id="w-country">
+              <option value="US" selected="selected">United States</option>
+            </select>
+            <input type="text" readonly="readonly" value="United States" class="custom_select__placeholder" />
+            <ul class="custom_select__list js_widget_custom__list">
+              <li data-value="US" class="custom_select__item custom_select__item-active">United States</li>
+            </ul>
+          <div class="custom_select__arrow"></div></div>
+        </div>
+      </div>
+
+      <!--<div class="row row-native">-->
+        <!--<div class="col-lg-12">-->
+          <!--<label for="w-googleapikey">Google API Key</label>-->
+          <!--<input type="text" id="w-googleapikey" name="w-googleapikey" value="">-->
+        <!--</div>-->
+      <!--</div>-->
+
+      <div class="row row-native">
+        <div class="col-lg-6 col-md-6 col-sm-3">
+          <label for="w-attractionid">Attraction ID</label>
+          <input type="text" value="" name="w-attractionid" id="w-attractionid" />
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-3">
+          <label for="w-promoterid">Promoter ID</label>
+          <input type="text" value="" name="w-promoterid" id="w-promoterid" />
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-3">
+          <label for="w-venueid">Venue ID</label>
+          <input type="text" value="" name="w-venueid" id="w-venueid" />
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-3">
+          <label for="w-city">City</label>
+          <input type="text" value="" name="w-city" id="w-city" />
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-3">
+          <label for="w-countryCode">Country Code</label>
+          <input type="text" value="" name="w-countryCode" id="w-countryCode" />
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-3">
+          <label for="w-source">Source</label>
+          <input type="text" value="" name="w-source" id="w-source" />
+        </div>
+        <div class="col-lg-12 col-md-6 col-sm-3">
+          <label for="w-classificationname">Classification Name</label>
+          <input type="text" value="" name="w-classificationname" id="w-classificationname" />
+        </div>
+      </div>
+
+      <div class="row row-native">
+        <div class="col-lg-12 col-md-6 col-sm-6">
+          <label for="w-affiliateid">Affiliate ID</label>
+          <input type="text" value="" name="w-affiliateid" id="w-affiliateid" />
+        </div>
+        <div class="col-lg-12 col-md-6 col-sm-6">
+          <label for="w-size">
+            Event Count <span class="config_field__description">(1-100)</span>
+          </label>
+        </div>
+        <div class="col-lg-3 col-md-2 col-sm-2 widget__various-width">
+          <div class="js_numeric-input-group"><input type="number" required="" min="1" max="100" value="25" name="w-size" id="w-size" class="js_widget__number js_numeric_input text-center double-margin-bottom" /><span class="arrow arrow__inc"></span><span class="arrow arrow__dec"></span></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="widget-config-styling" class="tab-pane fade">
+      <div class="row row-native">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-sm-theme">
+          <label>Themes</label>
+          <div class="tab-buttons">
+            <input type="radio" name="w-theme" value="simple" id="w-theme-simple" checked="checked" />
+            <label for="w-theme-simple">Poster</label>
+            <input type="radio" name="w-theme" value="oldschool" id="w-theme-oldschool" />
+            <label for="w-theme-oldschool">Oldskool</label>
+            <input type="radio" name="w-theme" value="newschool" id="w-theme-newschool" />
+            <label for="w-theme-newschool">Color Block</label>
+            <input type="radio" name="w-theme" value="listview" id="w-theme-listview" />
+            <label for="w-theme-listview">List View</label>
+          </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-sm-color_scheme">
+          <div style="display: none" class="widget__color_scheme_control">
+            <label>Color Scheme</label>
+            <div class="tab-buttons">
+              <input type="radio" name="w-colorscheme" value="light" id="w-colorscheme-light" checked="checked" />
+              <label for="w-colorscheme-light">Light</label>
+              <input type="radio" name="w-colorscheme" value="dark" id="w-colorscheme-dark" />
+              <label for="w-colorscheme-dark">Dark</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 col-sm-layout">
+          <div class="row base-margin-bottom">
+            <label>Layout</label>
+            <div class="col-lg-12 js-fixed-size-buttons radio-buttons">
+              <div class="row">
+                <div class="col-lg-4 col-sm-2 col-xs-2  widget__various-width">
+                  <input type="radio" name="w-proportion" value="xxl" id="w-fixed-300x600" />
+                  <label for="w-fixed-300x600">300x600</label>
+                </div>
+                <div class="col-lg-4 col-sm-2 col-xs-2  widget__various-width">
+                  <input type="radio" name="w-proportion" value="m" id="w-fixed-300x250" />
+                  <label for="w-fixed-300x250">300x250</label>
+                </div>
+
+                  <!--<input id="w-fixed-300x250" type="radio" value="l" name="w-proportion">
+                  <label for="w-fixed-300x250">300x250</label>
+                  <input id="w-fixed-728x90" type="radio" value="xl" name="w-proportion">
+                  <label for="w-fixed-728x90">728x90</label>
+                  <input id="w-fixed-160x600" type="radio" value="m" name="w-proportion">
+                  <label for="w-fixed-160x600">160x600</label>
+                  <input id="w-fixed-180x150" type="radio" value="s" name="w-proportion">
+                  <label for="w-fixed-180x150">180x150</label>-->
+                <div class="col-lg-4 col-sm-2 col-xs-2  widget__various-width">
+                  <input type="radio" name="w-proportion" value="custom" id="w-custom" checked="checked" />
+                  <label for="w-custom">Custom</label>
+                </div>
+              </div>
+            </div>
+              <div class="col-lg-12 js-tab-buttons radio-buttons">
+                <div class="row">
+                <div class="col-lg-12 line"></div>
+                <div class="col-lg-4 col-sm-2 col-xs-2  widget__various-width">
+                  <input type="radio" name="w-layout" value="vertical" id="w-layout-vertical" checked="checked" />
+                  <label for="w-layout-vertical">Vertical</label>
+                </div>
+                <div class="col-lg-4 col-sm-2 col-xs-2  widget__various-width">
+                  <input type="radio" name="w-layout" value="horizontal" id="w-layout-horizontal" />
+                  <label for="w-layout-horizontal">Horizontal</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row row-native">
+        <div class="col-lg-12 js_widget_width_slider">
+          <label for="w-width">
+            Width <span class="config_field__description">(px)</span>
+          </label>
+          <div class="bootstrap_slider bootstrap_slider-horizontal">
+            <div class="slider slider-horizontal" id=""><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 0%;"></div><div class="slider-track-high" style="right: 0px; width: 100%;"></div><div class="slider-handle min-slider-handle" role="slider" aria-valuemin="350" aria-valuemax="500" style="left: 0%;" aria-valuenow="350" tabindex="0"></div><div class="slider-handle max-slider-handle hide" role="slider" aria-valuemin="350" aria-valuemax="500" style="left: 0%;" aria-valuenow="350" tabindex="0"></div></div><div class="tooltip tooltip-main top in" role="presentation" style="left: 0%; margin-left: 0px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">350</div></div><div class="tooltip tooltip-min top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div></div><input type="text" data-slider-value="350" data-slider-step="1" data-slider-max="500" data-slider-min="350" name="w-width" id="w-width" style="display: none;" data-value="350" value="350" />
+          </div>
+        </div>
+        <div class="col-lg-12 double-margin-bottom">
+          <label for="w-borderradius">
+            Corner Radius <span class="config_field__description">(px)</span>
+          </label>
+          <div class="bootstrap_slider bootstrap_slider-horizontal">
+            <div class="slider slider-horizontal" id=""><div class="slider-track"><div class="slider-track-low" style="left: 0px; width: 0%;"></div><div class="slider-selection" style="left: 0%; width: 20%;"></div><div class="slider-track-high" style="right: 0px; width: 80%;"></div><div class="slider-handle min-slider-handle" role="slider" aria-valuemin="0" aria-valuemax="20" style="left: 20%;" aria-valuenow="4" tabindex="0"></div><div class="slider-handle max-slider-handle hide" role="slider" aria-valuemin="0" aria-valuemax="20" style="left: 0%;" aria-valuenow="0" tabindex="0"></div></div><div class="tooltip tooltip-main top in" role="presentation" style="left: 20%; margin-left: 0px;"><div class="tooltip-arrow"></div><div class="tooltip-inner">4</div></div><div class="tooltip tooltip-min top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div><div class="tooltip tooltip-max top" role="presentation" style="display: none;"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div></div><input type="text" data-slider-value="4" data-slider-step="1" data-slider-max="20" data-slider-min="0" name="w-borderradius" id="w-borderradius" style="display: none;" data-value="4" value="4" />
+          </div>
+        </div>
+
+        <!--<div class="col-lg-12 base-margin">
+          <input type="checkbox" id="w-border">
+          <label for="w-border"><span></span>Include Border</label>
+        </div>-->
+
+      </div>
+    </div>
+
+    <div class="row row-native visible-lg">
+      <div class="col-lg-6 col-md-3 col-sm-3">
+        <button class="js_get_widget_code btn btn-block button button-blue widget_config__btn" type="button">GET CODE</button>
+      </div>
+      <div class="col-lg-6 col-md-3 col-sm-3">
+        <button class="js_reset_widget btn btn-block button-white-gray-border widget_config__btn" type="button">RESET</button>
+      </div>
+    </div>
+  </div>
+
+</form>
+
+    </div>
+
+    <div class="col-lg-8 col-lg-widget">
+      <div class="widget-container-wrapper" data-min="406" data-max="1110" style="margin-top: 0px;">
+        <div class="widget-container widget-container--discovery">
+          <div w-proportion="custom" w-segmentid="" w-affiliateid="" w-venueid="" w-promoterid="" w-attractionid="" w-layout="vertical" w-period="week" w-country="US" w-radius="25" w-postalcode="90015" w-borderradius="4" w-border="0" w-size="25" w-height="600" w-width="350" w-colorscheme="light" w-theme="simple" w-keyword="" w-googleapikey="" w-tmapikey="5QGCEXAsJowiCI4n1uAwMlCGAcSNAEmG" w-type="event-discovery" style="height: 600px; width: 350px;"><div class="events-root-container border" style="height: 561px; width: 350px; border-radius: 4px; border-width: 0px;"><div class="ss" ss-container=""><ul class="events-root" style="margin-left: 0%; width: 2300%;"><li class="event-wrapper event-group-wrapper" style="width: 350px; height: 561px;"><ul class="event-group event-group-0" style="margin-top: 0px;"><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6821735&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6821735&amp;REFERRAL_ID=tmfeed');">Paleyfest Previews: Fall TV Fan Pass</span><span class="event-date-wraper"><span class="event-date centered-logo">Tue, Sep 13, 2016 06:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">The Paley Center for Media</span><span class="event-address">465 N Beverly Hills Dr</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6821735&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6821735&amp;REFERRAL_ID=tmfeed');">Paleyfest Previews: Fall TV Fan Pass</span><span class="event-date-wraper"><span class="event-date centered-logo">Wed, Sep 14, 2016 06:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">The Paley Center for Media</span><span class="event-address">465 N Beverly Hills Dr</span></span></div></li></ul></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/b21/72ea41f4-f199-4bc2-b4bc-339c448c4b21_106431_TABLET_LANDSCAPE_16_9.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6821625&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6821625&amp;REFERRAL_ID=tmfeed');">PaleyFest Previews: Fall TV on NBC</span><span class="event-date-wraper"><span class="event-date centered-logo">Tue, Sep 13, 2016 06:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">The Paley Center for Media</span><span class="event-address">465 N Beverly Hills Dr</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/a/fea/409bdb4b-4f37-4b84-b0b6-0118aa4f6fea_127561_TABLET_LANDSCAPE_16_9.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://concerts.livenation.com/event/0900509C8E0D17B3" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://concerts.livenation.com/event/0900509C8E0D17B3');">Jake Bugg</span><span class="event-date-wraper"><span class="event-date centered-logo">Tue, Sep 13, 2016 07:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">The Wiltern</span><span class="event-address">3790 Wilshire Blvd.</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/a/82d/ce9ab294-144b-43a3-94fd-ea1c8972082d_96851_TABLET_LANDSCAPE_16_9.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://ticketmaster.com/event/0B005089E28B5471" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://ticketmaster.com/event/0B005089E28B5471');">French Masters</span><span class="event-date-wraper"><span class="event-date centered-logo">Tue, Sep 13, 2016 08:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">Hollywood Bowl</span><span class="event-address">2301 N Highland Ave</span></span></div></li><li class="event-wrapper event-group-wrapper" style="width: 350px; height: 561px;"><ul class="event-group event-group-4" style="margin-top: 0px;"><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/bea/03d47f66-d37b-4aca-aa17-0135be64dbea_105801_TABLET_LANDSCAPE_16_9.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6844005&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6844005&amp;REFERRAL_ID=tmfeed');">Richard Bona Mandekan Cubano, Feat: Richard Bona (Bass &amp; Vocals), Ludw</span><span class="event-date-wraper"><span class="event-date centered-logo">Tue, Sep 13, 2016 08:30 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">Catalina Bar &amp; Grill</span><span class="event-address">6725 W. Sunset Blvd.</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/bea/03d47f66-d37b-4aca-aa17-0135be64dbea_105801_TABLET_LANDSCAPE_16_9.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6844015&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6844015&amp;REFERRAL_ID=tmfeed');">Richard Bona Mandekan Cubano, Feat: Richard Bona (Bass &amp; Vocals), Ludw</span><span class="event-date-wraper"><span class="event-date centered-logo">Wed, Sep 14, 2016 08:30 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">Catalina Bar &amp; Grill</span><span class="event-address">6725 W. Sunset Blvd.</span></span></div></li></ul></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6888565&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6888565&amp;REFERRAL_ID=tmfeed');">Randy Emata</span><span class="event-date-wraper"><span class="event-date centered-logo">Tue, Sep 13, 2016 09:30 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">The Federal Bar</span><span class="event-address">5303 Lankershim Boulevard</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6871685&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6871685&amp;REFERRAL_ID=tmfeed');">Paleyfest Previews: Ash VS Evil Dead</span><span class="event-date-wraper"><span class="event-date centered-logo">Wed, Sep 14, 2016 07:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">The Paley Center for Media</span><span class="event-address">465 N Beverly Hills Dr</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/a/908/62a36fb6-781e-42cf-8e2d-2c4f4058a908_64331_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://ticketmaster.com/event/0B00509D9C034BDC" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://ticketmaster.com/event/0B00509D9C034BDC');">Beyoncé - The Formation World Tour</span><span class="event-date-wraper"><span class="event-date centered-logo">Wed, Sep 14, 2016 07:30 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">Dodger Stadium</span><span class="event-address">1000 Elysian Park Ave</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6799385&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6799385&amp;REFERRAL_ID=tmfeed');">Veterans In Film &amp; Television Open Mic Night</span><span class="event-date-wraper"><span class="event-date centered-logo">Wed, Sep 14, 2016 08:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">Molly Malones</span><span class="event-address">575 South Fairfax Avenue</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6871165&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6871165&amp;REFERRAL_ID=tmfeed');">Mark Haberland</span><span class="event-date-wraper"><span class="event-date centered-logo">Wed, Sep 14, 2016 08:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">Genghis Cohen</span><span class="event-address">740 N. Fairfax Ave.</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/48b/2352e3b5-8496-496b-97a3-e605177e848b_105851_TABLET_LANDSCAPE_16_9.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://ticketmaster.com/event/0B00508C85473E6D" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://ticketmaster.com/event/0B00508C85473E6D');">Sing the Truth</span><span class="event-date-wraper"><span class="event-date centered-logo">Wed, Sep 14, 2016 08:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">Hollywood Bowl</span><span class="event-address">2301 N Highland Ave</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6891065&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6891065&amp;REFERRAL_ID=tmfeed');">West Coast Songwriters</span><span class="event-date-wraper"><span class="event-date centered-logo">Wed, Sep 14, 2016 09:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">Genghis Cohen</span><span class="event-address">740 N. Fairfax Ave.</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/fbc/b293c0ad-c904-4215-bc59-8d7f2414dfbc_106141_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://concerts.livenation.com/event/090050B907B34C78" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://concerts.livenation.com/event/090050B907B34C78');">Arch Angel Presents Carabao 35th Anniversary</span><span class="event-date-wraper"><span class="event-date centered-logo">Wed, Sep 14, 2016 10:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">The Wiltern</span><span class="event-address">3790 Wilshire Blvd.</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6888615&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6888615&amp;REFERRAL_ID=tmfeed');">The Federal Affair</span><span class="event-date-wraper"><span class="event-date centered-logo">Wed, Sep 14, 2016 10:30 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">The Federal Bar</span><span class="event-address">5303 Lankershim Boulevard</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6799375&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6799375&amp;REFERRAL_ID=tmfeed');">Hollowbody Presents: Lakoda</span><span class="event-date-wraper"><span class="event-date centered-logo">Wed, Sep 14, 2016 11:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">Molly Malones</span><span class="event-address">575 South Fairfax Avenue</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6710075&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6710075&amp;REFERRAL_ID=tmfeed');">The Paley Center for Media : Supporting &amp; Patron Membership</span><span class="event-date-wraper"><span class="event-date centered-logo">Thu, Sep 15, 2016 06:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">The Paley Center for Media</span><span class="event-address">465 N Beverly Hills Dr</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6710105&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6710105&amp;REFERRAL_ID=tmfeed');">The Paley Center for Media : Individual Membership</span><span class="event-date-wraper"><span class="event-date centered-logo">Thu, Sep 15, 2016 06:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">The Paley Center for Media</span><span class="event-address">465 N Beverly Hills Dr</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/a/c5c/0a09b2a4-b77b-402f-bbe2-b4d729d66c5c_113771_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://concerts.livenation.com/event/0900502FD101285F" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://concerts.livenation.com/event/0900502FD101285F');">Boyce Avenue - Postponed - Moved to The Belasco Theater</span><span class="event-date-wraper"><span class="event-date centered-logo">Thu, Sep 15, 2016 06:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">The Wiltern</span><span class="event-address">3790 Wilshire Blvd.</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/a/c5c/0a09b2a4-b77b-402f-bbe2-b4d729d66c5c_113771_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://ticketmaster.com/event/0900507FDB1946FE" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://ticketmaster.com/event/0900507FDB1946FE');">Boyce Avenue</span><span class="event-date-wraper"><span class="event-date centered-logo">Thu, Sep 15, 2016 06:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">The Belasco Theater</span><span class="event-address">1050 South Hill Street</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6891205&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6891205&amp;REFERRAL_ID=tmfeed');">Raise Your Glass (A Tribute To Pink), Evan Devries and the Seattle Sev</span><span class="event-date-wraper"><span class="event-date centered-logo">Thu, Sep 15, 2016 06:50 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">The Federal Bar</span><span class="event-address">5303 Lankershim Boulevard</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6851835&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6851835&amp;REFERRAL_ID=tmfeed');">Paleyfest Previews: the Mindy Project-Writer's Room</span><span class="event-date-wraper"><span class="event-date centered-logo">Thu, Sep 15, 2016 07:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">The Paley Center for Media</span><span class="event-address">465 N Beverly Hills Dr</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6837615&amp;REFERRAL_ID=tmfeed" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://www.ticketweb.com/t3/sale/SaleEventDetail?dispatch=loadSelectionData&amp;eventId=6837615&amp;REFERRAL_ID=tmfeed');">Ipanema Lounge</span><span class="event-date-wraper"><span class="event-date centered-logo">Thu, Sep 15, 2016 07:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">Genghis Cohen</span><span class="event-address">740 N. Fairfax Ave.</span></span></div></li><li class="event-wrapper" style="height: 561px; width: 350px;"><span class="bg-cover" style="background-image: url(&quot;http://s1.ticketm.net/dam/c/8cf/a6653880-7899-4f67-8067-1f95f4d158cf_124761_TABLET_LANDSCAPE_3_2.jpg&quot;);"></span><div class="event-content-wraper"><span class="event-name event-pretended-link" data-url="http://concerts.livenation.com/event/09005118BAFF594C" onclick="ga('send', 'event', 'DiscoveryClickeventName_theme=simple_width=350_height=600_color_scheme=light', 'click', 'http://concerts.livenation.com/event/09005118BAFF594C');">LA Rams Foundation</span><span class="event-date-wraper"><span class="event-date centered-logo">Thu, Sep 15, 2016 07:00 PM</span></span><span class="address-wrapper"><span class="event-address event-address-name">The Wiltern</span><span class="event-address">3790 Wilshire Blvd.</span></span></div></li></ul></div><div class="event-logo-box"><a class="event-logo centered-logo" target="_blank" href="http://www.ticketmaster.com/">Powered by </a></div><a class="event-question" target="_blank" href="http://developer.ticketmaster.com/support/faq/"></a><a class="event-buy-btn main-btn" target="_blank" href="" onclick="ga('send', 'event', 'DiscoveryClickBuyButton', 'click');">BUY NOW</a><div class="event-message"><div class="event-message__content"></div><div class="event-message__btn"></div></div><div class="events_control events_control-horizontal events_control-left events_control-hidden"></div><div class="events_control events_control-horizontal events_control-right"></div><div class="events_control events_control-vertical events_control-top events_control-hidden"></div><div class="events_control events_control-vertical events_control-bottom"></div></div><a class="legal-notice" target="_blank" href="http://developer.ticketmaster.com/support/terms-of-use/">Legal Notice</a><div class="events-counter">1 of 23 events</div></div>
+        </div>
+      </div>
+      <div class="row hidden-lg row-mobile-control">
+        <div class="row row-native">
+          <div class="col-md-3 col-sm-3">
+            <button class="js_get_widget_code btn btn-block button button-blue widget_config__btn" type="button">GET CODE</button>
+          </div>
+          <div class="col-md-3 col-sm-3">
+            <button class="js_reset_widget btn btn-block button-white-gray-border widget_config__btn" type="button">RESET</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div id="disqus_thread"><iframe width="100%" frameborder="0" id="dsq-app1" name="dsq-app1" allowtransparency="true" scrolling="no" tabindex="0" title="Disqus" style="width: 1px ! important; min-width: 100% ! important; border: medium none ! important; overflow: hidden ! important; height: 588px ! important;" src="http://disqus.com/embed/comments/?base=default&amp;version=7db0a8c4bee4df88f1bc3ece88c0d738&amp;f=ticketmasterapi&amp;t_i=Widget&amp;t_u=http%3A%2F%2Fticketmaster-api-staging.github.io%2Fproducts-and-docs%2Fwidgets%2Fevent-discovery%2F&amp;t_d=Widget%20%E2%80%93%20The%20Ticketmaster%20Developer%20Portal&amp;t_t=Widget%20%E2%80%93%20The%20Ticketmaster%20Developer%20Portal&amp;s_o=default" horizontalscrolling="no" verticalscrolling="no"></iframe></div>
+<script>
+  var disqus_config = function () {
+    this.page.url = document.URL || "http://developer.ticketmaster.com/";
+    this.page.identifier = "Widget";
+  };
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+
+    s.src = '//ticketmasterapi.disqus.com/embed.js';
+
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+
+<!-- Modal widget-->
+<div role="dialog" class="modal modal-common fade" id="js_widget_modal">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button aria-label="Close" data-dismiss="modal" class="close" type="button"></button>
+        <div class="row">
+          <h3 class="modal-title col-lg-12">Embedded code</h3>
+        </div>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4>HTML</h4>
+            <code data-lang="html" class="language-html widget_dialog__code"></code>
+            <h4>JavaScript</h4>
+            <code data-lang="js" class="language-js widget_dialog__code">
+              &lt;script src="http://ticketmaster-api-staging.github.io/products-and-docs/widgets/event-discovery/1.0.0/lib/main-widget.js"&gt;&lt;/script&gt;
+            </code>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-submit text-center" type="button" id="js_widget_modal__close">Ok</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal widget end-->
+
+
+<!-- Modal has no code-->
+<div role="dialog" class="modal modal-common modal-common-sm fade" id="js_widget_modal_no_code">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <h3 class="modal-title col-lg-12 text-center">Warning</h3>
+        <p class="text-center">There are no such events</p>
+        <div class="modal-footer">
+          <button class="btn btn-submit text-center" type="button" id="js_widget_modal_no_code__close">Ok</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal has no code end-->
+
+
+<script src="/products-and-docs/widgets/event-discovery/1.0.0/lib/main-widget.js?v=1"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/6.1.5/bootstrap-slider.min.js"></script>
+<script src="/products-and-docs/widgets/event-discovery/1.0.0/lib/main-widget-config.js?v=1"></script>
+
+
+                    
+                <div class="side-box"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="xs-center slice-top-left menu-bg" id="footer">
+<div class="row footer-nav">
+    <div class="row-container">
+        <div class="col-xs-12 col-sm-2">
+            <a href="/products-and-docs/"><h4 class="white">Products &amp; Docs</h4></a>
+            <ul>
+                <li><a href="/products-and-docs/apis/getting-started/">APIs</a></li>
+                <li><a href="/products-and-docs/sdks/">SDKs</a></li>
+                <li><a href="/products-and-docs/widgets/">Widgets</a></li>
+                <li><a href="/products-and-docs/tutorials/">Tutorials</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+            <a href="/partners/"><h4 class="white">Partners</h4></a>
+            <ul>
+                <li><a href="/partners/distribution-partners/">Distribution Partners</a></li>
+                <li><a href="/partners/certified-partners/">Certified Partners</a></li>
+                <!--<li><a href="https://member.impactradius.com/bla/Ticketmasterdirect/login.user">Affiliates</a></li>-->
+                <li><a href="/partners/startups-and-developers/">Startups &amp; Developers</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+            <a href="/support/"><h4 class="white">Support</h4></a>
+            <ul>
+                <li><a href="/support/faq/">FAQ</a></li>
+                
+                <li><a href="/support/terms-of-use/">General Terms of Use</a></li>
+                <li><a href="/support/terms-of-use/partner/">Partner API Terms of Use</a></li>
+                <li><a href="/support/branding-guide/">Branding Guide</a></li>
+                <li><a href="/support/contact-us/">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+            <a href="/blogs/"><h4 class="white">Blogs</h4></a>
+            <ul>
+                <li><a href="http://tech.ticketmaster.com/">Tech Blog</a></li>
+                <li><a href="https://medium.com/ticketmaster-tech/">Medium Publication</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+            <a href="/events/"><h4 class="white">Events</h4></a>
+            <ul>
+                <li><a href="/events/#hackathon">hackathons</a></li>
+                <li><a href="/events/#devjam">devjam</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-2">
+            <a href="http://code.ticketmaster.com/"><h4 class="white">Open Source</h4></a>
+            <ul>
+                <li><a href="http://code.ticketmaster.com/#android-projects">Android</a></li>
+                <li><a href="http://code.ticketmaster.com/#backend-projects">Backend</a></li>
+                <li><a href="http://code.ticketmaster.com/#iOS-projects">iOS</a></li>
+                <li><a href="http://code.ticketmaster.com/#web-projects">Web</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div style="margin-bottom: 10px;" class="row bottom-logo">
+    <div class="row-container">
+        <div class="col-xs-12">
+            <a href="http://www.ticketmaster.com">
+            <img src="/assets/img/footer/ticketmaster-logo-white.svg" alt="Ticketmaster logo" />
+            </a>
+            <span>© 1976–2016 Ticketmaster. All rights reserved.</span>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script src="/scripts/vendors/user-scroll-disabler.js"></script>
+<script src="/scripts/components/pd-side-menu.js"></script>
+<script src="/scripts/components/menu-highlight.js"></script>
+
+
+
+
+<script async="" src="/scripts/components/events-counter.js"></script>
+
+
+        <div id="back-top" style="display: none;">
+            <a href="javascript:void(0)"><span></span></a>
+        </div>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-72344127-1', 'auto');
+            ga('send', 'pageview');
+            (function () {
+                var item = sessionStorage.getItem('tk-api-email');
+                document.getElementsByClassName("apigee-login")[0].textContent = item &amp;&amp; (item !== 'undefined') ?  item : "Login";
+            })();
+        </script>
+        <script src="/scripts/components/scroll-top.js"></script>
+        <script src="/scripts/vendors/bootstrap.min.js"></script>
+        
+
+<div role="dialog" tabindex="-1" id="feedback-modal" class="modal modal-common fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button aria-label="Close" data-dismiss="modal" class="close" type="button"></button>
+        <div class="row">
+          <h3 class="modal-title col-lg-12">Leave Your Feedback</h3>
+        </div>
+      </div>
+      <div class="modal-body">
+
+        <form method="POST" action="http://getsimpleform.com/messages/ajax?form_api_token=d9878ccc8e22c7253d057015617f82cd" accept-charset="UTF-8" id="js_feedback_form">
+          <div class="col-lg-6">
+            <label for="name">Your name</label>
+            <input type="text" autofocus="" maxlength="255" name="name" id="name" required="" />
+          </div>
+          <div class="col-lg-6">
+            <label for="email">Your email</label>
+            <input type="email" title="Use the following format '-@-.--' " pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,3}$" required="" name="email" id="email" />
+          </div>
+          <div class="col-lg-12">
+            <label for="subject">Subject</label>
+            <div class="js_custom_select custom_select">
+              <select id="subject" name="subject" class="custom_select__field" required="">
+                <option value="General feedback">General feedback</option>
+                <option value="Current workflow of the portal">Current workflow of the portal</option>
+                <option value="Technical issues">Technical issues</option>
+              </select>
+              <input type="text" readonly="readonly" value="General feedback" class="custom_select__placeholder" />
+              <ul class="custom_select__list">
+                <li data-value="General feedback" class="custom_select__item custom_select__item-active">General feedback</li>
+                <li data-value="Current workflow of the portal" class="custom_select__item">Current workflow of the portal</li>
+                <li data-value="Technical issues" class="custom_select__item">Technical issues</li>
+              </ul>
+            <div class="custom_select__arrow"></div></div>
+          </div>
+          <div class="col-lg-12">
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="3" required=""></textarea>
+          </div>
+          <div class="col-sm-12">
+            <p style="display:none" class="text-overflow-message text-overflow-message__red" id="feedback-message-error">The maximum length of description can be 3000 characters.</p>
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-submit" type="button" id="js_feedback_btn">send</button>
+      </div>
+
+
+
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+<!-- Button trigger modal -->
+<button data-target="#feedback-modal" data-toggle="modal" class="btn feedback-btn scale-on-hover" type="button" id="js_feedback_open">feedback</button>
+
+
+<!-- Modal alert-->
+<div role="dialog" class="modal modal-common modal-common-sm fade" id="feedback-alert-modal">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <h3 class="modal-title col-lg-12 text-center">Thank you for contacting us!</h3>
+        <p class="text-center">We will review and respond promptly.</p>
+        <div class="modal-footer">
+          <button class="btn btn-submit text-center" type="button" id="js_feedback_btn_alert_ok">Ok</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal alert end-->
+        <script src="/scripts/components/custom-select.js"></script>
+        <script src="/scripts/components/numeric-input.js"></script>
+        <script src="/scripts/components/feedback.js"></script>
+        <script src="/scripts/load-api-key.js?v=1"></script><iframe style="display: none;" src="https://developer-acct.ticketmaster.com/user/" name="target"></iframe>
+
+
+    
+
+<iframe style="display: none;"></iframe></body><canvas id="fxdriver-screenshot-canvas" style="display: none;" width="1184" height="2870"></canvas></html>

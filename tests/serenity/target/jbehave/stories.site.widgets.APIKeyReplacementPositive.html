@@ -1,0 +1,284 @@
+<div class="story">
+<h1></h1>
+<div class="path">stories/site/widgets/APIKeyReplacementPositive.story</div>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@kb </div>
+</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">As a</span> test enfineer</div>
+<div class="element asA"><span class="keyword asA">I want to</span> test Ticket Master Developer's site</div>
+<div class="element iWantTo"><span class="keyword iWantTo">So that</span> I test API Key is NOT replaced on the page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Geting Started page) Placeholder is shown when user is not logged in</h2>
+<div class="step successful">Given open Getting Started page</div>
+<div class="step successful">When User is not logged to site (Getting Started)</div>
+<div class="step successful">Then check that API key is provided for all placeholders on Getting Started page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Geting Started page) Custom API key is shown when user is logged in</h2>
+<div class="step successful">Given open Getting Started page</div>
+<div class="step successful">When User is logged to site (Getting Started)</div>
+<div class="step failed">Then check that API key is provided for all placeholders on Getting Started page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
+<pre class="failure">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at bla.tm.steps.products_and_docs.PD_GettingStartedSteps.checkAPIKeyPlaceholders(PD_GettingStartedSteps.java:82)
+	at bla.tm.steps.products_and_docs.PD_GettingStartedSteps$$EnhancerByCGLIB$$28e16f6f.CGLIB$checkAPIKeyPlaceholders$5(&lt;generated&gt;)
+	at bla.tm.steps.products_and_docs.PD_GettingStartedSteps$$EnhancerByCGLIB$$28e16f6f$$FastClassByCGLIB$$ccea2fc4.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:333)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:308)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_GettingStartedSteps$$EnhancerByCGLIB$$28e16f6f.checkAPIKeyPlaceholders(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_GettingStartedDefinition.checkAPIKeyPlaceholders(PD_GettingStartedDefinition.java:64)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Geting Started page) Placeholder is shown when user is not logged in</h2>
+<div class="step successful">Given open Getting Started page</div>
+<div class="step failed">When User is not logged to site (Getting Started) <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError: Element should be visible</span></div>
+<div class="step notPerformed">Then check that API key is provided for all placeholders on Getting Started page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">java.lang.AssertionError: Element should be visible
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.failWithMessage(WebElementFacadeImpl.java:710)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.shouldBeVisible(WebElementFacadeImpl.java:365)
+	(reflection-invoke)
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)
+	at com.sun.proxy.$Proxy21.shouldBeVisible(Unknown Source)
+	at bla.tm.steps.pantheon.UserLogInSteps.isPageOpened(UserLogInSteps.java:21)
+	at bla.tm.steps.pantheon.UserLogInSteps$$EnhancerByCGLIB$$29690948.CGLIB$isPageOpened$2(&lt;generated&gt;)
+	at bla.tm.steps.pantheon.UserLogInSteps$$EnhancerByCGLIB$$29690948$$FastClassByCGLIB$$9b4cb49e.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:333)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:308)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.pantheon.UserLogInSteps$$EnhancerByCGLIB$$29690948.isPageOpened(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_GettingStartedDefinition.openLogInPageAndCheckUserIsNotLoggedIn(PD_GettingStartedDefinition.java:34)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Geting Started page) Custom API key is shown when user is logged in</h2>
+<div class="step successful">Given open Getting Started page</div>
+<div class="step failed">When User is logged to site (Getting Started) <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 2 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-0e290319-3440-linux-8', ip: '172.17.6.15', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown</span></div>
+<div class="step notPerformed">Then check that API key is provided for all placeholders on Getting Started page <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<pre class="failure">net.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 2 seconds. Element not found
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-0e290319-3440-linux-8', ip: '172.17.6.15', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+	at net.serenitybdd.core.exceptions.SerenityManagedException.detachedCopyOf(SerenityManagedException.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:317)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.pantheon.UserLogInSteps$$EnhancerByCGLIB$$29690948.logInToAccount(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_GettingStartedDefinition.openLogInPageAndLogIn(PD_GettingStartedDefinition.java:41)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Interactive API Console page) Placeholder is shown when user is not logged in</h2>
+<div class="step successful">Given open Interactive API Console page</div>
+<div class="step successful">When User is not logged to site (Interactive API Console)</div>
+<div class="step successful">Then check that API key is provided for all placeholders on Interactive API Console page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Interactive API Console page) Custom API key is shown when user is logged in</h2>
+<div class="step successful">Given open Interactive API Console page</div>
+<div class="step successful">When User is logged to site (Interactive API Console)</div>
+<div class="step failed">Then check that API key is provided for all placeholders on Interactive API Console page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">net.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 5 seconds waiting for net.serenitybdd.core.pages.WebElementFacadeImpl$1@3bc1ded2
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-0e290319-3440-linux-8', ip: '172.17.6.15', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-0e290319-3440-linux-8', ip: '172.17.6.15', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown</span></div>
+<pre class="failure">net.serenitybdd.core.exceptions.SerenityManagedException: Timed out after 5 seconds waiting for net.serenitybdd.core.pages.WebElementFacadeImpl$1@3bc1ded2
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-0e290319-3440-linux-8', ip: '172.17.6.15', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'testing-worker-linux-docker-0e290319-3440-linux-8', ip: '172.17.6.15', os.name: 'Linux', os.arch: 'amd64', os.version: '3.13.0-40-generic', java.version: '1.8.0_31'
+Driver info: driver.version: unknown
+	at net.serenitybdd.core.exceptions.SerenityManagedException.detachedCopyOf(SerenityManagedException.java:20)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:317)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_InteractiveAPIConsoleSteps$$EnhancerByCGLIB$$236f58fd.checkAPIKeyPlaceholders(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_InteractiveAPIConsoleDefinition.checkAPIKeyPlaceholders(PD_InteractiveAPIConsoleDefinition.java:54)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - API Explorer) Placeholder is shown when user is not logged in</h2>
+<div class="step successful">Given open API Explorer page</div>
+<div class="step successful">When User is not logged to site (API Explorer)</div>
+<div class="step successful">Then check that API key is provided for all placeholders on API Explorer page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - API Explorer) Custom API key is shown when user is logged in</h2>
+<div class="step successful">Given open API Explorer page</div>
+<div class="step successful">When User is logged to site (API Explorer)</div>
+<div class="step failed">Then check that API key is provided for all placeholders on API Explorer page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.junit.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[QbcFFHHgxNrHTrLdTGNcVk1vEhkkxlAR]&gt;</span></div>
+<pre class="failure">org.junit.ComparisonFailure: expected:&lt;[]&gt; but was:&lt;[QbcFFHHgxNrHTrLdTGNcVk1vEhkkxlAR]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at bla.tm.steps.products_and_docs.PD_APIExplorerSteps.checkAPIKeyPlaceholders(PD_APIExplorerSteps.java:50)
+	at bla.tm.steps.products_and_docs.PD_APIExplorerSteps$$EnhancerByCGLIB$$3d57d75f.CGLIB$checkAPIKeyPlaceholders$5(&lt;generated&gt;)
+	at bla.tm.steps.products_and_docs.PD_APIExplorerSteps$$EnhancerByCGLIB$$3d57d75f$$FastClassByCGLIB$$c9c00db9.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:333)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:308)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_APIExplorerSteps$$EnhancerByCGLIB$$3d57d75f.checkAPIKeyPlaceholders(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_APIExplorerDefinition.checkAPIKeyPlaceholders(PD_APIExplorerDefinition.java:54)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Countdown Widget) Placeholder is shown when user is not logged in</h2>
+<div class="step successful">Given open Countdown Widget page</div>
+<div class="step successful">When User is not logged to site (Countdown Widget)</div>
+<div class="step successful">Then check that API key is provided for all placeholders on Countdown Widget page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Countdown Widget) Custom API key is shown when user is logged in</h2>
+<div class="step successful">Given open Countdown Widget page</div>
+<div class="step successful">When User is logged to site (Countdown Widget)</div>
+<div class="step failed">Then check that API key is provided for all placeholders on Countdown Widget page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.junit.ComparisonFailure: expected:&lt;[5QGCEXAsJowiCI4n1uAwMlCGAcSNAEmG]&gt; but was:&lt;[QbcFFHHgxNrHTrLdTGNcVk1vEhkkxlAR]&gt;</span></div>
+<pre class="failure">org.junit.ComparisonFailure: expected:&lt;[5QGCEXAsJowiCI4n1uAwMlCGAcSNAEmG]&gt; but was:&lt;[QbcFFHHgxNrHTrLdTGNcVk1vEhkkxlAR]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at bla.tm.steps.products_and_docs.PD_Widget_CountdownSteps.checkAPIKeyPlaceholders(PD_Widget_CountdownSteps.java:50)
+	at bla.tm.steps.products_and_docs.PD_Widget_CountdownSteps$$EnhancerByCGLIB$$a42aa7fc.CGLIB$checkAPIKeyPlaceholders$4(&lt;generated&gt;)
+	at bla.tm.steps.products_and_docs.PD_Widget_CountdownSteps$$EnhancerByCGLIB$$a42aa7fc$$FastClassByCGLIB$$4661d140.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:333)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:308)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_Widget_CountdownSteps$$EnhancerByCGLIB$$a42aa7fc.checkAPIKeyPlaceholders(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_Widget_CountdownDefinition.checkAPIKeyPlaceholders(PD_Widget_CountdownDefinition.java:54)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Event Discovery Widget) Placeholder is shown when user is not logged in</h2>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">When User is not logged to site (Event Discovery Widget)</div>
+<div class="step successful">Then check that API key is provided for all placeholders on Event Discovery Widget page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Event Discovery Widget) Custom API key is shown when user is logged in</h2>
+<div class="step successful">Given open Event Discovery Widget page</div>
+<div class="step successful">When User is logged to site (Event Discovery Widget)</div>
+<div class="step failed">Then check that API key is provided for all placeholders on Event Discovery Widget page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.junit.ComparisonFailure: expected:&lt;[5QGCEXAsJowiCI4n1uAwMlCGAcSNAEmG]&gt; but was:&lt;[QbcFFHHgxNrHTrLdTGNcVk1vEhkkxlAR]&gt;</span></div>
+<pre class="failure">org.junit.ComparisonFailure: expected:&lt;[5QGCEXAsJowiCI4n1uAwMlCGAcSNAEmG]&gt; but was:&lt;[QbcFFHHgxNrHTrLdTGNcVk1vEhkkxlAR]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at bla.tm.steps.products_and_docs.PD_Widget_EventDiscoverySteps.checkAPIKeyPlaceholders(PD_Widget_EventDiscoverySteps.java:50)
+	at bla.tm.steps.products_and_docs.PD_Widget_EventDiscoverySteps$$EnhancerByCGLIB$$f6f87d77.CGLIB$checkAPIKeyPlaceholders$4(&lt;generated&gt;)
+	at bla.tm.steps.products_and_docs.PD_Widget_EventDiscoverySteps$$EnhancerByCGLIB$$f6f87d77$$FastClassByCGLIB$$40b08d69.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:333)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:308)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_Widget_EventDiscoverySteps$$EnhancerByCGLIB$$f6f87d77.checkAPIKeyPlaceholders(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_Widget_EventDiscoveryDefinition.checkAPIKeyPlaceholders(PD_Widget_EventDiscoveryDefinition.java:54)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Discovery API v2 page) Placeholder is shown when user is not logged in</h2>
+<div class="step successful">Given open Discovery API v2 page</div>
+<div class="step successful">When User is not logged to site (Discovery API v2)</div>
+<div class="step successful">Then check that API key is provided for all placeholders on Discovery API v2 page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Discovery API v2 page) Custom API key is shown when user is logged in</h2>
+<div class="step successful">Given open Discovery API v2 page</div>
+<div class="step successful">When User is logged to site (Discovery API v2)</div>
+<div class="step failed">Then check that API key is provided for all placeholders on Discovery API v2 page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
+<pre class="failure">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at bla.tm.steps.products_and_docs.PD_DiscoveryAPIv2Steps.checkAPIKeyPlaceholders(PD_DiscoveryAPIv2Steps.java:61)
+	at bla.tm.steps.products_and_docs.PD_DiscoveryAPIv2Steps$$EnhancerByCGLIB$$b0e436ac.CGLIB$checkAPIKeyPlaceholders$4(&lt;generated&gt;)
+	at bla.tm.steps.products_and_docs.PD_DiscoveryAPIv2Steps$$EnhancerByCGLIB$$b0e436ac$$FastClassByCGLIB$$5201779d.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:333)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:308)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_DiscoveryAPIv2Steps$$EnhancerByCGLIB$$b0e436ac.checkAPIKeyPlaceholders(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_DiscoveryAPIv2Definition.checkAPIKeyPlaceholders(PD_DiscoveryAPIv2Definition.java:54)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Discovery API v1 page) Placeholder is shown when user is not logged in</h2>
+<div class="step successful">Given open Discovery API v1 page</div>
+<div class="step successful">When User is not logged to site (Discovery API v1)</div>
+<div class="step successful">Then check that API key is provided for all placeholders on Discovery API v1 page</div>
+</div>
+<div class="scenario">
+<h2>Scenario: (APi Key - Discovery API v1 page) Custom API key is shown when user is logged in</h2>
+<div class="step successful">Given open Discovery API v1 page</div>
+<div class="step successful">When User is logged to site (Discovery API v1)</div>
+<div class="step failed">Then check that API key is provided for all placeholders on Discovery API v1 page <span class="keyword failed">(FAILED)</span><br/><span class="message failed">java.lang.AssertionError</span></div>
+<pre class="failure">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at bla.tm.steps.products_and_docs.PD_DiscoveryAPIv1Steps.checkAPIKeyPlaceholders(PD_DiscoveryAPIv1Steps.java:61)
+	at bla.tm.steps.products_and_docs.PD_DiscoveryAPIv1Steps$$EnhancerByCGLIB$$d6bb1937.CGLIB$checkAPIKeyPlaceholders$4(&lt;generated&gt;)
+	at bla.tm.steps.products_and_docs.PD_DiscoveryAPIv1Steps$$EnhancerByCGLIB$$d6bb1937$$FastClassByCGLIB$$deba44f8.invoke(&lt;generated&gt;)
+	at net.sf.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:228)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:348)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:333)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:308)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:130)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:57)
+	at bla.tm.steps.products_and_docs.PD_DiscoveryAPIv1Steps$$EnhancerByCGLIB$$d6bb1937.checkAPIKeyPlaceholders(&lt;generated&gt;)
+	at bla.tm.definitions.site.products_and_docs.PD_DiscoveryAPIv1Definition.checkAPIKeyPlaceholders(PD_DiscoveryAPIv1Definition.java:54)
+	(reflection-invoke)
+	at org.jbehave.core.steps.StepCreator$ParametrisedStep.perform(StepCreator.java:599)
+	at org.jbehave.core.embedder.PerformableTree$FineSoFar.run(PerformableTree.java:340)
+...</pre>
+</div>
